@@ -1,0 +1,188 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main heading (Name) styling */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #00aaff;
+}
+
+/* Subheading (Profession/Role) styling */
+h2 {
+    color: blue;
+    text-align: center;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: #00aaff;
+}
+
+/* Section image styling */
+section img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* General image styling */
+img {
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+/* Description paragraph styling */
+p {
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Skills/Services list styling */
+.skills {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* List item styling */
+.skills li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+/* External Profile Link styling */
+a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffaa00;
+}
+
+/* GitHub link button styling */
+.github-link button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.github-link button:hover {
+    background-color: #555;
+}
+
+/* Social Media Links styling */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.social-media a img:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Footer section styling */
+footer {
+    background: darkgreen;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .skills li {
+        font-size: 1em;
+    }
+
+    .social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* For Android phones and iPhones */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .skills li {
+        font-size: 0.9em;
+    }
+
+    .social-media a img {
+        width: 25px;
+        height: 25px;
+    }
+}
