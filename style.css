@@ -74,6 +74,8 @@ p {
 .skills li {
     margin: 5px 0;
     list-style: none;
+    text-align: center;
+    
 }
 
 /* External Profile Link styling */
